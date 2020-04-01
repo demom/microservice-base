@@ -15,6 +15,7 @@ RUN npm install @deepstream/client
 # Lets create the data dir
 RUN mkdir -p /data && \
 cd /data
+WORKDIR /data
 
 # This is the start command
 CMD ["npm","start"]
